@@ -82,6 +82,24 @@ namespace ProyectoIntegrador
             {
                 //funcion para borrar registros
                 Console.WriteLine( "funcion para borrar registros" );
+                string numeroMatricula=Console.WriteLine("Ingrese el numero de matricula que quiera borrar: ")
+                Console.ReadLine();
+                Matricula borrar = new Matricula()
+                {
+                    NumeroMatricula=numeroMatricula
+                }
+                string borrarMatricula(numeroMatricula){
+                    borrar.NumeroMatriculas= new List<string>
+                    {
+                        "PD6513"
+                        "P51357"
+                    }
+               
+                }
+                foreach (var actual in borrar.NumeroMatriculas)
+	{
+                    Console.WriteLine(actual);
+	}
                 deseasContinuar();
             }
             else if( opcion[0] == "actualizar" )
